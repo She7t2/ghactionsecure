@@ -1,0 +1,15 @@
+name : FirstWorkFlow 
+
+on:
+  push:
+      branches:
+        - main
+jobs:
+  exmaple-job: 
+    runs-on:
+      - ubuntu-latest
+    steps:
+     - name: print a welcom message background  
+       run: echo "Welcom to our github action workflow" 
+      
+  
