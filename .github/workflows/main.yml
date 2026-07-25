@@ -11,5 +11,8 @@ jobs:
     steps:
      - name: print a welcom message background  
        run: echo "Welcom to our github action workflow" 
-      
-  
+
+       
+     - name :  checout repo 
+       uses  :  actions/setup-node@v4 
+     
