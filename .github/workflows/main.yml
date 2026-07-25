@@ -14,5 +14,5 @@ jobs:
 
        
      - name :  checout repo 
-       uses  :  actions/setup-node@v4 
+       uses: actions/setup-node@v4
      
