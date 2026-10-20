@@ -1,34 +1,20 @@
-name: CiCD
+name  : CiCD
+#ABC
 
-on:
-  push:
+on: 
+  push: 
     branches: 
-      - main   # first branch
-      - "release/**" 
-    paths: 
-      - "src/**" 
-
-  pull_request:  
+      - main   # firts brach 
+  pull_request: 
     branches:  
       - main 
-    paths: 
-      - "src/**" # تم تصحيحها لتبحث في src بدلاً من release لتجنب التعارض
 
-  workflow_dispatch: # <--- أضفنا هذا السطر لكي يظهر زر "Run workflow" يدوياً في أي وقت
-
-jobs:  
-  test:  
+            
+jobs: 
+  test: 
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code  
+      - 
+        name: Checkout code 
         uses: actions/checkout@v4.2.2
 
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18' # حدد إصدار الـ Node المناسب لمشروعك
-
-      - name: Run test or Script  
-        run: |
-          OUTPUT=$(node -e "console.log(require('./src/app')('Test'))")
-          echo "The output is: $OUTPUT"
