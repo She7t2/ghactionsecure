@@ -5,7 +5,8 @@ on:
   push: 
     branches: 
       - main   # firts brach 
-      - master  
+      - master   # scond brabch  
+      
 
       - "release/**" 
     paths: 
