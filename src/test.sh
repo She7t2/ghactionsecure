@@ -5,7 +5,7 @@
 
 EXPECTED = "Hello , Test !!!" 
 
-OUTPUT = $ (node -e "console.log(require('./src/app')('Test'))")
+OUTPUT = $ (node -e "console.log(require('./src/app')('test'))")
 
 
 if  [$OUTPUT == $EXPECTED] ; then 
@@ -16,7 +16,7 @@ exit 0
 
 else 
 
-echo " Test failed !  EXPECTED $EXPECTED but got  $OUTPUT"
+echo " Test failed !  EXPECTED $EXPECTED but got   $OUTPUT"
 
 exit 1 
 fi 
